@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import PlainCss from "./components/plainCss";
+import CssProcessor from "./components/cssProcessor";
+import InlineStyle from "./components/inlineStyle";
+import CssInModule from "./components/cssModule";
+import CssInJS from "./components/cssInJS";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PlainCss />
+      <CssProcessor />
+      <InlineStyle />
+      <CssInModule />
+      <CssInJS />
     </div>
   );
 }
